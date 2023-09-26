@@ -2,6 +2,10 @@
 
 This repo holds a modified version of the FusionAuth 5 minute getting started guide. It uses the kickstart functionality to obviate manual configuration of FusionAuth.
 
+This project is used to show examples of creating and testing lambdas.
+
+This project is paired with the [Lambda Guide](https://fusionauth.io/docs/v1/tech/guides/lambda). In order for the tests to pass, you need to work through that guide.
+
 ## Project Contents
 
 The `docker-compose.yml` file and the `kickstart` directory are used to start and configure a local FusionAuth server.
@@ -16,7 +20,7 @@ The `/app` directory contains a fully working version of the application.
 To run FusionAuth, just stand up the docker containers using `docker-compose`.
 
 ```shell
-docker-compose up
+docker compose up
 ```
 
 This will start a PostgreSQL database, and Elastic service, and the FusionAuth server.
